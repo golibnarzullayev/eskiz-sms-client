@@ -1,6 +1,6 @@
 {
   "name": "eskiz-sms-client",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Simple and well-structured Eskiz.uz SMS API wrapper for Node.js/TypeScript projects",
   "main": "dist/index.js",
   "scripts": {
