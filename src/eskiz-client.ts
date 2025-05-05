@@ -9,8 +9,4 @@ export class EskizClient {
     const tokenManager = new TokenManager(options);
     this.sms = new SmsService(tokenManager);
   }
-
-  async login() {
-    await this.sms.tokenManager.login();
-  }
 }
