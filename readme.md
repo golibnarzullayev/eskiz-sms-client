@@ -33,16 +33,3 @@ await client.sms.send({
   from: "4546", // optional
 });
 ```
-
-## 📘 API Reference
-
-`🔑 login()` - Authenticates the user and stores the token internally.
-
-`send({ to, message, from })` - Sends an SMS to the specified phone number. from property is optional.
-
-```ts
-await client.sms.sendSMS({
-  to: "998901234567",
-  message: "Hello from Eskiz!",
-});
-```
