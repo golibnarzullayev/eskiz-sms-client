@@ -1,2 +1,2 @@
-export { EskizClient } from "./src/eskiz-client";
+export { EskizClient } from "./src/EskizClient";
 export * from "./src/types";

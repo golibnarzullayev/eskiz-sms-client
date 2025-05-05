@@ -6,7 +6,7 @@
   "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
-    "build": "tsc && javascript-obfuscator dist --output dist",
+    "build": "tsc",
     "prepublishOnly": "pnpm run build",
     "prepare": "pnpm run build"
   },
@@ -29,7 +29,6 @@
     "eskiz-sms-client": "^1.0.0"
   },
   "devDependencies": {
-    "javascript-obfuscator": "^4.1.1",
     "typescript": "^5.4.0"
   },
   "repository": {
