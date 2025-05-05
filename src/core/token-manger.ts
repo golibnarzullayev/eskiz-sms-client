@@ -10,7 +10,7 @@ export class TokenManager {
     this.http = new HttpClient(`${DEFAULT_BASE_URL}/api/auth`);
   }
 
-  public async login(): Promise<void> {
+  private async login(): Promise<void> {
     const response = await this.http.post<IToken>("/login", {
       email: this.options.email,
       password: this.options.password,

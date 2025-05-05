@@ -27,8 +27,6 @@ const client = new EskizClient({
   password: "yourPassword",
 });
 
-await client.login();
-
 await client.sms.send({
   to: "998901234567",
   message: "Salom!",
