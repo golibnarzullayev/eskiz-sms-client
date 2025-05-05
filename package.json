@@ -3,6 +3,7 @@
   "version": "1.0.8",
   "description": "Simple and well-structured Eskiz.uz SMS API wrapper for Node.js/TypeScript projects",
   "main": "dist/index.js",
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "prepublishOnly": "pnpm run build",
@@ -24,7 +25,7 @@
   },
   "dependencies": {
     "axios": "^1.6.0",
-    "eskiz-sms-client": "^1.0.7"
+    "eskiz-sms-client": "^1.0.8"
   },
   "devDependencies": {
     "typescript": "^5.4.0"

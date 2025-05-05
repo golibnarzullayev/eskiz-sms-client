@@ -6,7 +6,7 @@ import { DEFAULT_BASE_URL } from "../config";
 export class SmsService {
   private http: HttpClient;
 
-  constructor(public tokenManager: TokenManager) {
+  constructor(private tokenManager: TokenManager) {
     this.http = new HttpClient(`${DEFAULT_BASE_URL}/api`);
   }
 
