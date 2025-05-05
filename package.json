@@ -4,8 +4,9 @@
   "description": "Simple and well-structured Eskiz.uz SMS API wrapper for Node.js/TypeScript projects",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "type": "module",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && javascript-obfuscator dist --output dist",
     "prepublishOnly": "pnpm run build",
     "prepare": "pnpm run build"
   },
@@ -24,9 +25,11 @@
     "access": "public"
   },
   "dependencies": {
-    "axios": "^1.6.0"
+    "axios": "^1.6.0",
+    "eskiz-sms-client": "^1.0.0"
   },
   "devDependencies": {
+    "javascript-obfuscator": "^4.1.1",
     "typescript": "^5.4.0"
   },
   "repository": {
