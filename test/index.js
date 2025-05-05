@@ -1,4 +1,4 @@
-import { EskizClient } from "eskiz-sms-client";
+const { EskizClient } = require("eskiz-sms-client");
 
 const client = new EskizClient({
   email: "gnarzullayev2000@gmail.com",
@@ -6,15 +6,19 @@ const client = new EskizClient({
 });
 
 const sendMessage = async () => {
-  await client.login();
+  try {
+    await client.login();
 
-  const response = await client.sms.send({
-    to: "998908717181",
-    message:
-      "Xurmomarket.uz: Shaxsiy kabinetga kirish uchun tasdiqlash kodi - 12345",
-  });
+    const response = await client.sms.send({
+      to: "998908717181",
+      message:
+        "Xurmomarket.uz: Shaxsiy kabinetga kirish uchun tasdiqlash kodi - 12345",
+    });
 
-  console.log(response);
+    console.log(response);
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 (async () => {

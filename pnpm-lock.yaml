@@ -12,8 +12,8 @@ importers:
         specifier: ^1.6.0
         version: 1.9.0
       eskiz-sms-client:
-        specifier: ^1.0.2
-        version: 1.0.2
+        specifier: ^1.0.3
+        version: 1.0.3
     devDependencies:
       typescript:
         specifier: ^5.4.0
@@ -59,8 +59,8 @@ packages:
     resolution: {integrity: sha512-j6vWzfrGVfyXxge+O0x5sh6cvxAog0a/4Rdd2K36zCMV5eJ+/+tOAngRO8cODMNWbVRdVlmGZQL2YS3yR8bIUA==}
     engines: {node: '>= 0.4'}
 
-  eskiz-sms-client@1.0.2:
-    resolution: {integrity: sha512-cvpaodMG3pU3+dcU9M+ixESeuNnsam8WIwNPJdPEZdvajaPLrlbfKjJ2feiNJ1zTMwnEL3iPkN4hQEEXAhSgTA==}
+  eskiz-sms-client@1.0.3:
+    resolution: {integrity: sha512-h+hP1+VAbvS0MftLmU7ANSfHDJSlBntGtJ5NvpSkxb5n912k8yR52CEBAR2s/sKRR/aMz1J1qmg6TQ/Io92jfQ==}
 
   follow-redirects@1.15.9:
     resolution: {integrity: sha512-gew4GsXizNgdoRyqmyfMHyAmXsZDk6mHkSxZFCzW9gwlbtOW44CDtYavM+y+72qD/Vq2l550kMF52DT8fOLJqQ==}
@@ -166,7 +166,7 @@ snapshots:
       has-tostringtag: 1.0.2
       hasown: 2.0.2
 
-  eskiz-sms-client@1.0.2:
+  eskiz-sms-client@1.0.3:
     dependencies:
       axios: 1.9.0
     transitivePeerDependencies:
