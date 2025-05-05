@@ -23,8 +23,6 @@ export class SmsService {
       { headers: { Authorization: `Bearer ${token}` } }
     );
 
-    cl
-
     return { data: response };
   }
 }
