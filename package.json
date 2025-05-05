@@ -1,0 +1,31 @@
+{
+  "name": "eskiz-sms-client",
+  "version": "1.0.0",
+  "description": "Simple and well-structured Eskiz.uz SMS API wrapper for Node.js/TypeScript projects",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "pnpm run build"
+  },
+  "keywords": [
+    "eskiz",
+    "sms",
+    "api",
+    "uzbekistan",
+    "typescript",
+    "wrapper",
+    "notification"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
