@@ -1,4 +1,4 @@
-# eskiz-sms-client
+# eskiz-client
 
 A simple, modern, and type-safe Node.js/TypeScript client for [Eskiz.uz SMS API](https://eskiz.uz/).
 
@@ -14,13 +14,13 @@ A simple, modern, and type-safe Node.js/TypeScript client for [Eskiz.uz SMS API]
 ## 📦 Installation
 
 ```bash
-npm install eskiz-sms-client
+npm install eskiz-client
 ```
 
 ## ⚙️ Usage
 
 ```ts
-import { EskizClient } from "eskiz-sms-client";
+import { EskizClient } from "eskiz-client";
 
 const client = new EskizClient({
   email: "your@email.com",
