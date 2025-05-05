@@ -7,6 +7,13 @@ export interface ISendMessagePayload {
   to: string;
   message: string;
   from?: string;
+  callbackUrl?: string;
+}
+
+export interface IBatchSendMessagePayload {
+  messages: Array<{ to: string; message: string; userSmsId: string }>;
+  from?: string;
+  callbackUrl?: string;
 }
 
 export interface IToken {
@@ -18,5 +25,5 @@ export interface IToken {
 export interface ISendMessageResponse {
   id: string;
   message: string;
-  status: string;
+  status: string | string[];
 }

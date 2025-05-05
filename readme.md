@@ -19,6 +19,8 @@ npm install eskiz-client
 
 ## ⚙️ Usage
 
+### send to one phone number
+
 ```ts
 import { EskizClient } from "eskiz-client";
 
@@ -31,5 +33,41 @@ await client.sms.send({
   to: "998901234567",
   message: "Salom!",
   from: "4546", // optional
+  callbackUrl: "", // optional
+});
+```
+
+### send to multiple phone numbers
+
+```ts
+import { EskizClient } from "eskiz-client";
+
+const client = new EskizClient({
+  email: "your@email.com",
+  password: "yourPassword",
+});
+
+await client.sms.sendBatch({
+  messages: [{ userSmsId: "123123a", to: "998901234567", message: "Salom" }]
+  from: "4546", // optional
+  callbackUrl: "", // optional
+});
+```
+
+### send to global phone number
+
+```ts
+import { EskizClient } from "eskiz-client";
+
+const client = new EskizClient({
+  email: "your@email.com",
+  password: "yourPassword",
+});
+
+await client.sms.sendGlobal({
+  to: "998901234567",
+  message: "Salom!",
+  from: "4546", // optional
+  callbackUrl: "", // optional
 });
 ```
