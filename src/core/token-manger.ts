@@ -11,11 +11,11 @@ export class TokenManager {
   }
 
   public async login(): Promise<void> {
-    const res = await this.http.post<IToken>("/login", {
+    const response = await this.http.post<IToken>("/login", {
       email: this.options.email,
       password: this.options.password,
     });
-    this.token = res.data.token;
+    this.token = response.data.token;
     if (this.token) this.http.setToken(this.token);
   }
 

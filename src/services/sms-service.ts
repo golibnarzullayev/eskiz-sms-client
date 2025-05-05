@@ -10,15 +10,19 @@ export class SmsService {
     this.http = new HttpClient(`${DEFAULT_BASE_URL}/api`);
   }
 
-  async send({ to, message, from = "4546" }: ISendMessagePayload) {
+  async send({
+    to,
+    message,
+    from = "4546",
+  }: ISendMessagePayload): Promise<{ data: ISendMessageResponse }> {
     const token = await this.tokenManager.getToken();
 
-    const res = await this.http.post<ISendMessageResponse>(
+    const response = await this.http.post<ISendMessageResponse>(
       "/message/sms/send",
       { mobile_phone: to, message, from },
       { headers: { Authorization: `Bearer ${token}` } }
     );
 
-    return res;
+    return { data: response };
   }
 }
