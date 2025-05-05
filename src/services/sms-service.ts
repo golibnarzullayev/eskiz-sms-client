@@ -15,9 +15,12 @@ export class SmsService {
     message,
     from = "4546",
   }: ISendMessagePayload): Promise<{ data: ISendMessageResponse }> {
+    const token = await this.tokenManager.getToken();
+
     const response = await this.http.post<ISendMessageResponse>(
       "/message/sms/send",
-      { mobile_phone: to, message, from }
+      { mobile_phone: to, message, from },
+      { headers: { Authorization: `Bearer ${token}` } }
     );
 
     return { data: response };
